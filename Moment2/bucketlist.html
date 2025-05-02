@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="moment2.css">
+	<script src="javascript/myCustomJs.js"></script>
+    <script src="javascript2.js"></script>
+
+</head>
+<body>
+
+    
+<div class="topnav" id="myTopnav">
+    <a href="Uppgift2.html">Home</a>
+    <a href="london.html">London</a>
+    <a href="paris.html">Paris</a>
+    <a href="#tokyo">Tokyo</a>
+    <a href="bucketlist.html">Cities Bucketlist</a>
+    <a href="contactform.html" >Contactforms</a>
+    <a href="/Moment3/contact.html"  class="active">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="w3-container w3-yellow">
+  <h1>Survey</h1> 
+  <p>What is your favourite city?</p> 
+</div>
+<br>
+<form>
+    <div class="w3-row-padding">
+        <div class="w3-third" id="formQuestion1">
+
+            <fieldset>
+                <legend>My Cities</legend>
+                City:<br>
+                <input type="text" id="cityInput"> <button type="button" onclick="addCity()">Add City</button> 
+                <br><br><br>
+                Cities:<br>
+                <div id="cityList">
+                    <textarea class="noresize" id="city1" cols="25" rows="1" disabled></textarea>
+                    <textarea class="noresize" id="city2" cols="25" rows="1" disabled></textarea>
+                    <textarea class="noresize" id="city3" cols="25" rows="1" disabled></textarea>
+                    <textarea class="noresize" id="city4" cols="25" rows="1" disabled></textarea>
+                    <textarea class="noresize" id="city5" cols="25" rows="1" disabled></textarea>
+                </div>
+                <br><br>
+                <button type="button" onclick="sortCity()">Sort</button>
+                <input type="reset" onclick="resetFix()" value="Reset">
+            </fieldset>
+            
+        </div>
+    </div>
+</form>  
+   
+    <pre id="senasteStad"></pre>
+   
+</body>
+</html>

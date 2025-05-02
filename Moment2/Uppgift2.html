@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>Responsive Mall.CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="moment2.css">
+	<script src="javascript/myCustomJs.js"></script>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="london.html">London</a>
+    <a href="paris.html">Paris</a>
+    <a href="#tokyo">Tokyo</a>
+    <a href="bucketlist.html">Cities Bucketlist</a>
+    <a href="contactform.html" >Contactforms</a>
+    <a href="/Moment3/contact.html"  class="active">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="w3-container w3-yellow">
+  <h1>Survey</h1> 
+  <p>What is your favourite city</p> 
+</div>
+<br>
+<form id="demo" action="mailto:mikael.herz@astar.se" enctype="text/plain">
+    <div class="w3-row-padding">
+        <div class="w3-third" id="formQuestion1">
+        
+            <fieldset>
+                <legend>Contact details</legend>
+                First name:<br>
+                <input type="text" name="fname" id="fname"> <br>
+                
+                Surname:<br>
+                <input type="text" name="ename" id="ename"> <br>
+                
+                E-mail:<br>
+                <input type="email" name="email" id="email"> <br>
+            
+            </fieldset>
+            <br>
+            <fieldset>
+                What is your next travel destination?:<br>
+                <textarea name="msg" id="msg" cols="45" rows="5"></textarea> <br>        
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Favourite city</legend>
+                
+                    <input type="radio" id="stad1" name="stad" value="london">
+                    <label for="stad1">London</label><br>
+                    <input type="radio" id="stad2" name="stad" value="paris">
+                    <label for="stad2">Paris</label><br>
+                    <input type="radio" id="stad3" name="stad" value="Tokyo">
+                    <label for="stad3">Tokyo</label><br>
+                    <input type="radio" id="annan" name="stad" value="annan">
+                    <label for="annan">Annan</label>   
+            </fieldset>
+ 
+            <br>
+            <input type="submit" value="Send">
+        </div>
+    </div>
+</form>  
+
+
+</body>
+</html>
